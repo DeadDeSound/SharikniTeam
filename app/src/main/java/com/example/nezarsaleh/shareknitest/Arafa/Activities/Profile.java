@@ -97,6 +97,8 @@ public class Profile extends AppCompatActivity {
 
         new jsoning(lv_driver,pDialog,this).execute();
 
+        //hello nezar
+
         try {
             JSONObject json = j.GetDriverById(Driver_ID);
             TopName.setText(json.getString("FirstName") + " " + json.getString("MiddleName"));
