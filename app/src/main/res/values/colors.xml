@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#e30815</color>
+    <color name="primaryColorDark">#858585</color>
+    <color name="accentColor">#F44336</color>
+    <color name="gray_before_login">#5f5f5f</color>
+
+</resources>

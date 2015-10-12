@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#eaeaea"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:baselineAligned="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frregisternew"
+            android:id="@+id/fr_register"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/frloginnew"
+            android:id="@+id/fr_login"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:id="@+id/fr_top_rides_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frtakeatournew"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frsearchnew"
+            android:id="@+id/fr_search"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="#FFFFFF" />
+</LinearLayout>

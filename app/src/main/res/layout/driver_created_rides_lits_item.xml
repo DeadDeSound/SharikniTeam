@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="25dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/driver_profile_RouteEnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="RouteName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+
+        android:id="@+id/from_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driver_profile_RouteEnName"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="From "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/em_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driver_profile_RouteEnName"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/from_txt_id"
+        android:layout_toRightOf="@+id/from_txt_id"
+        android:text="@string/city_from_txt"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/comma4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/em_from"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toEndOf="@+id/em_from"
+        android:layout_toRightOf="@+id/em_from"
+        android:text="-"
+
+        />
+
+
+    <TextView
+        android:id="@+id/reg_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/em_from"
+        android:layout_toEndOf="@+id/comma4"
+        android:layout_toRightOf="@+id/comma4"
+        android:text="@string/Distreict_name_txt"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/to_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/from_txt_id"
+        android:layout_alignStart="@+id/from_txt_id"
+        android:layout_below="@+id/reg_from"
+        android:layout_marginTop="10dp"
+        android:text="To "
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/em_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/to_txt_id"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@id/to_txt_id"
+        android:layout_toRightOf="@id/to_txt_id"
+        android:text="@string/city_to_txt"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/comma5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/em_to"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toEndOf="@+id/em_to"
+        android:layout_toRightOf="@+id/em_to"
+        android:text="-"
+
+        />
+
+    <TextView
+        android:id="@+id/reg_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/em_to"
+        android:layout_toEndOf="@+id/comma5"
+        android:layout_toRightOf="@+id/comma5"
+        android:text="@string/district_name_2"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/StartFromTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/to_txt_id"
+        android:layout_alignStart="@+id/to_txt_id"
+        android:layout_below="@+id/to_txt_id"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:text="00:00 AM"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/comma6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/StartFromTime"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/StartFromTime"
+        android:layout_toRightOf="@+id/StartFromTime"
+        android:text="-"
+        android:textSize="16sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/EndToTime_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/StartFromTime"
+        android:layout_toEndOf="@+id/comma6"
+        android:layout_toRightOf="@+id/comma6"
+        android:lines="1"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:text="00:24 PM"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/driver_profile_dayWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StartFromTime"
+        android:layout_alignStart="@+id/StartFromTime"
+        android:layout_below="@+id/StartFromTime"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_22"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/StartFromTime"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borders_quicksearch_btn"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Details"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_23"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/Relative_22"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borders_quicksearch_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Permit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/newedit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/driver_profile_RouteEnName"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</RelativeLayout>

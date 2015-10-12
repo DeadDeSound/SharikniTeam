@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SharekniTest</string>
+
+    <string name="title_activity_main">Sharekni</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">next</string>
+    <string name="title_activity_sub_navigate">HelloAppbar</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_colse">Close</string>
+
+
+    <string-array name="tabs">
+        <item>Tab 1</item>
+        <item>Tab 2</item>
+        <item>Tab 3</item>
+    </string-array>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_top_rides">TopRidesActivity</string>
+    <string name="title_activity_top_drivers">TopDrivers</string>
+    <string name="title_activity_On_Boarding">OnBoarding</string>
+    <string name="title_activity_view_profile">ViewProfileActivity</string>
+    <string name="txt_yo_yo">yo yo</string>
+    <string name="from_text_top_ride">From :</string>
+    <string name="to_text_top_ride">To   :</string>
+    <string name="city_from_txt">City Name</string>
+    <string name="city_to_txt">City Name2</string>
+    <string name="Distreict_name_txt">District Name</string>
+    <string name="district_name_2">District Name 2</string>
+    <string name="txt_arabic">عربي</string>
+    <string name="fragment_one_login_txt">LOGIN</string>
+    <string name="txt_best_drivers">Best Drivers</string>
+    <string name="txt_top_rides">Top Rides</string>
+    <string name="txt_about_us">About Us</string>
+    <string name="title_activity_home_page_test">HomePageTest</string>
+    <string name="title_activity_login_approved">LoginApproved</string>
+    <string name="title_activity_search_options">SearchOptions</string>
+    <string name="title_activity_register_approved">Register</string>
+    <string name="title_activity_route_teset">RouteTesetActiv</string>
+    <string name="title_activity_register_new_test">User Registration</string>
+    <string name="title_activity_my_profile_tet">MyProfileTet</string>
+    <string name="title_activity_top_rides_after_login">TopRidesAfterLogin</string>
+    <string name="title_activity_top_drivers_after_login">TopDriversAfterLogin</string>
+    <string name="title_activity_most_rides_details">MostRidesDetails</string>
+    <string name="title_activity_forget_password">ForgetPassword</string>
+    <string name="title_activity_change_password_test">ChangePasswordTest</string>
+    <string name="title_activity_my_profile_test">MyProfileTest</string>
+    <string name="title_activity_edit_profile_test">EditProfileTest</string>
+    <string name="btn_login_text">Login</string>
+    <string name="title_activity_quick_search">QuickSearch</string>
+    <string name="title_activity_quick_search_results">QuickSearchResults</string>
+    <string name="title_activity_driver_create_car_pool">DriverCreateCarPool</string>
+    <string name="title_activity_qsearch">QSearch</string>
+    <string name="title_activity_advanced__search">Advanced_Search</string>
+    <string name="title_activity_driver_alerts_for_request">DriverAlertsForRequest</string>
+    <string name="title_activity_ride_details_passenger">RideDetailsPassenger</string>
+    <string name="title_activity_driver_request_details">DriverRequestDetails</string>
+    <string name="title_activity_driver_created_rides">DriverCreatedRides</string>
+    <string name="title_activity_driver_joined_rides">DriverJoinedRides</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_test_vedio">TestVedio</string>
+
+
+
+</resources>

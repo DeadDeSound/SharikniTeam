@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    >
+
+<TextView
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/AccountName"
+    android:text="AccountName"
+    android:textSize="16sp"
+    android:layout_marginTop="20dp"
+    android:maxLength="12"
+    android:layout_marginBottom="10dp"
+    />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AccountNationalityEn"
+        android:text="AccountNationalityEn"
+        android:layout_toRightOf="@+id/AccountName"
+        android:layout_toEndOf="@+id/AccountName"
+        android:layout_alignBottom="@+id/AccountName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:maxLength="10"
+
+        />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/chat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/AccountName"
+        android:id="@+id/passenger_lits_item_chat"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/add"
+        android:layout_alignBottom="@+id/AccountName"
+        android:layout_toLeftOf="@+id/passenger_lits_item_chat"
+        android:layout_toStartOf="@+id/passenger_lits_item_chat"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/passenger_lits_item_add"
+        />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/call"
+            android:layout_alignBottom="@+id/AccountName"
+            android:layout_toLeftOf="@+id/passenger_lits_item_add"
+            android:layout_toStartOf="@+id/passenger_lits_item_add"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="5dp"
+            android:id="@+id/passenger_lits_item_call"
+            />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/msg"
+        android:layout_alignBottom="@+id/AccountName"
+        android:layout_toLeftOf="@+id/passenger_lits_item_call"
+        android:layout_toStartOf="@+id/passenger_lits_item_call"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="5dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

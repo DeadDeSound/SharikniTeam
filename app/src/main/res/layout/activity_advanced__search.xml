@@ -1,0 +1,481 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nezar.materialtest.QuickSearch">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/registerbackgroundtest"
+        android:layout_below="@+id/app_bar"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+
+    <RelativeLayout
+        android:id="@+id/advanced_search_pickup_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_register_border_quicksearch"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/quickSearch_pickUp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borders_quicksearch_btn"
+            android:text="Pickup"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/Advanced_txt_Selecet_Start_Point"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/quickSearch_pickUp"
+            android:layout_toRightOf="@+id/quickSearch_pickUp"
+            android:gravity="center_vertical"
+            android:text="Select Start Point"
+            android:textColor="#9e9e9e"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/advanced_search_dropOff_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/advanced_search_pickup_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_register_border_quicksearch"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/advanced_search__Dropoff"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borders_quicksearch_btn"
+            android:text="Drop Off"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/Advanced_txt_Select_Dest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/advanced_search__Dropoff"
+            android:layout_toRightOf="@+id/advanced_search__Dropoff"
+            android:gravity="center_vertical"
+            android:text="Select Destination"
+            android:textColor="#9e9e9e" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/advanced_search_calendar_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/advanced_search_dropOff_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/user_register_border_quicksearch">
+
+        <TextView
+            android:id="@+id/Advanced_textview50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageview_search"
+            android:layout_toRightOf="@+id/imageview_search"
+            android:text="Click to Select\nStrarting When"
+            android:textColor="@color/primaryColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageview_search"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/calicon" />
+
+
+        <TextView
+            android:id="@+id/Advanced_search_txt_yaer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search"
+            android:layout_toRightOf="@+id/imageview_search"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/advanced_search_time_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/advanced_search_dropOff_relative"
+        android:layout_alignRight="@+id/advanced_search_dropOff_relative"
+        android:layout_below="@+id/advanced_search_dropOff_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/user_register_border_quicksearch">
+
+        <TextView
+            android:id="@+id/Advanced_textview51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search_time"
+            android:layout_toRightOf="@+id/imageview_search_time"
+            android:text="Click to Select\nSchedule on"
+            android:textColor="@color/primaryColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageview_search_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/timeicon"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Advanced_txt_time_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search_time"
+            android:layout_toRightOf="@+id/imageview_search_time"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/single_periodic_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/advanced_search_time_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/user_register_border">
+
+        <ImageView
+            android:id="@+id/singleRide_Periodic"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/slidemale" />
+
+        <ImageView
+            android:id="@+id/Periodic_SingleRide"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/slidefemale"
+            android:visibility="invisible"
+
+            />
+
+
+        <TextView
+            android:id="@+id/malefemale_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/singleRide_Periodic"
+            android:layout_toStartOf="@+id/singleRide_Periodic"
+            android:text="Single"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/femalemale_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Periodic_SingleRide"
+            android:layout_toEndOf="@+id/Periodic_SingleRide"
+            android:text="Periodic"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/gray_before_login"
+            android:textSize="16sp"
+            />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/advanced_search_txt_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_periodic_relative"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="(Optional)"
+        android:textColor="@color/primaryColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/view_underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/advanced_search_txt_optional"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#a3a3a3" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/advanced_search_Nat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view_underline"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borders_quicksearch"
+        android:cursorVisible="false"
+        android:hint="Preferred Nationality"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryColor"
+        android:textSize="15sp"
+
+        />
+
+
+            <TextView
+                android:id="@+id/advanced_search_Preferred_Lang_txt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/borders_quicksearch"
+                android:layout_below="@+id/advanced_search_Nat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Choose A Language"
+                android:textColor="@color/primaryColor"
+                android:gravity="center"
+                android:textColorHint="@color/primaryColor"
+                />
+
+
+            <TextView
+                android:id="@+id/advanced_search_Age_Range_txt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/borders_quicksearch"
+                android:layout_below="@+id/advanced_search_Preferred_Lang_txt"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Choose Age Range"
+                android:textColor="@color/primaryColor"
+                android:gravity="center"
+                android:textColorHint="@color/primaryColor"
+                />
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/advanced_search_Male_Female"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/advanced_search_Age_Range_txt"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/user_register_border">
+
+                <ImageView
+                    android:id="@+id/Advanced_malefemale1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/slidemale" />
+
+                <ImageView
+                    android:id="@+id/Advanced_femalemale2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/slidefemale"
+                    android:visibility="invisible"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/malefemale_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/Advanced_malefemale1"
+                    android:layout_toStartOf="@+id/Advanced_malefemale1"
+                    android:text="Male"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/femalemale_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Advanced_femalemale2"
+                    android:layout_toEndOf="@+id/Advanced_femalemale2"
+                    android:text="Female"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/gray_before_login"
+                    android:textSize="16sp"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+    <Button
+    android:id="@+id/btn_advanced_search_page"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/advanced_search_Male_Female"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/user_register_border_button"
+    android:text="Search"
+    android:textAllCaps="false"
+    android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

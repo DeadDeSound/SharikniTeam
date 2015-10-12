@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackgroundtest"
+    tools:context="com.example.nezar.materialtest.QuickSearch">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/pickup_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_register_border_quicksearch"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/quickSearch_pickUp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borders_quicksearch_btn"
+            android:text="Pickup"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/quickSearch_pickUp"
+            android:layout_toRightOf="@+id/quickSearch_pickUp"
+            android:gravity="center_vertical"
+            android:text="Select Start Point"
+            android:textColor="#9e9e9e"
+                android:id="@+id/txt_Selecet_Start_Point"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dropOff_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pickup_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_register_border_quicksearch"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/quickSearch_Dropoff"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borders_quicksearch_btn"
+            android:text="Drop Off"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/quickSearch_Dropoff"
+            android:layout_toRightOf="@+id/quickSearch_Dropoff"
+            android:gravity="center_vertical"
+            android:text="Select Destination"
+            android:id="@+id/txt_Select_Dest"
+            android:textColor="#9e9e9e"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/calendar_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dropOff_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/user_register_border_quicksearch">
+
+        <TextView
+            android:id="@+id/textview50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Click to Select\nStrarting When"
+            android:textColor="@color/primaryColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search"
+            android:layout_toRightOf="@+id/imageview_search"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageview_search"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/calicon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search"
+            android:layout_toRightOf="@+id/imageview_search"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:id="@+id/search_txt_yaer"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignEnd="@+id/dropOff_relative"
+        android:layout_alignRight="@+id/dropOff_relative"
+        android:id="@+id/time_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/dropOff_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/user_register_border_quicksearch"
+        >
+
+        <TextView
+            android:id="@+id/textview51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/imageview_search_time"
+            android:layout_toRightOf="@+id/imageview_search_time"
+            android:text="Click to Select\nSchedule on"
+            android:textColor="@color/primaryColor"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageview_search_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/timeicon"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageview_search_time"
+            android:layout_toRightOf="@+id/imageview_search_time"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_time_selected"
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_search_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/user_register_border_button"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

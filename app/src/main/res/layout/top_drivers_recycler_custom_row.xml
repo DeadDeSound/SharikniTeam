@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/relativecontainer"
+    >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/lineartop"
+
+        >
+
+
+        <TextView
+            android:id="@+id/firstLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#ff0fb89b"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/search_list_from_txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dubai"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/search_list_from_txt"
+        android:layout_toEndOf="@+id/search_list_from_txt"
+        android:layout_alignBottom="@+id/search_list_from_txt"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/From_EmirateName_en"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/From_EmirateName_en"
+        android:layout_toEndOf="@+id/From_EmirateName_en"
+        android:layout_alignBottom="@+id/search_list_from_txt"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/search_list_comma"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burj Khalifa"
+        android:layout_toRightOf="@+id/search_list_comma"
+        android:layout_toEndOf="@+id/search_list_comma"
+        android:layout_alignBottom="@+id/From_EmirateName_en"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:id="@+id/From_RegionName_en"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/search_list_from_txt"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/search_list_to_txt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajman"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/search_list_to_txt"
+        android:layout_toEndOf="@+id/search_list_to_txt"
+        android:layout_alignBottom="@+id/search_list_to_txt"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/To_EmirateName_en"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/To_EmirateName_en"
+        android:layout_toEndOf="@+id/To_EmirateName_en"
+        android:layout_alignBottom="@+id/search_list_to_txt"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/search_list_comma2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajman Port"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/search_list_comma2"
+        android:layout_toEndOf="@id/search_list_comma2"
+        android:layout_alignBottom="@+id/search_list_to_txt"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/To_RegionName_en"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06:30 Am"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/search_list_to_txt"
+        android:layout_marginTop="5dp"
+        android:id="@+id/SDG_Route_Start_FromTime"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~"
+        android:layout_toRightOf="@+id/SDG_Route_Start_FromTime"
+        android:layout_toEndOf="@+id/SDG_Route_Start_FromTime"
+        android:layout_alignBottom="@+id/SDG_Route_Start_FromTime"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/search_list_comma3"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:15 PM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/search_list_comma3"
+        android:layout_toEndOf="@id/search_list_comma3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignBottom="@+id/SDG_Route_Start_FromTime"
+
+        />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/SDG_Route_Start_FromTime"
+        android:src="@drawable/testprofile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/search_list_photo"
+
+        />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Khaled Farouq"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/search_list_photo"
+    android:layout_toEndOf="@+id/search_list_photo"
+    android:layout_alignBottom="@+id/search_list_photo"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/DriverEnName"
+    />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syria"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/search_list_photo"
+        android:layout_toEndOf="@+id/search_list_photo"
+        android:layout_alignStart="@+id/DriverEnName"
+        android:layout_alignLeft="@+id/DriverEnName"
+        android:layout_alignBottom="@+id/search_list_photo"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/Nationality_en"
+        />
+
+
+
+
+</RelativeLayout>

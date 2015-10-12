@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.nezar.materialtest.HomePage">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+
+        />
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/my_recycler_view_sub_navy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/app_bar"-->
+        <!--android:scrollbars="vertical" />-->
+
+
+
+</RelativeLayout>

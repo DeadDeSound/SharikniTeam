@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="25dp"
+    android:paddingBottom="5dp"
+    android:background="#FFFFFF"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borders"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+
+        >
+
+    <TextView
+
+        android:id="@+id/from_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="From "
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/em_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/from_txt_id"
+        android:layout_toRightOf="@+id/from_txt_id"
+        android:text="@string/city_from_txt"
+        android:textSize="16sp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toRightOf="@+id/em_from"
+        android:layout_toEndOf="@+id/em_from"
+        android:layout_alignBottom="@+id/em_from"
+        android:id="@+id/comma4"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/reg_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/comma4"
+        android:layout_toRightOf="@+id/comma4"
+        android:layout_alignBottom="@+id/em_from"
+        android:text="@string/Distreict_name_txt"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:singleLine="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/to_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/from_txt_id"
+        android:layout_alignStart="@+id/from_txt_id"
+        android:layout_below="@+id/reg_from"
+        android:layout_marginTop="10dp"
+        android:text="To "
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/em_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/to_txt_id"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@id/to_txt_id"
+        android:layout_toRightOf="@id/to_txt_id"
+        android:text="@string/city_to_txt"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toRightOf="@+id/em_to"
+        android:layout_toEndOf="@+id/em_to"
+        android:layout_alignBottom="@+id/em_to"
+        android:id="@+id/comma5"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        />
+    <TextView
+        android:id="@+id/reg_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comma5"
+        android:layout_toEndOf="@+id/comma5"
+        android:layout_alignBottom="@+id/em_to"
+        android:text="@string/district_name_2"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00 AM"
+        android:layout_below="@+id/to_txt_id"
+        android:layout_alignStart="@+id/to_txt_id"
+        android:layout_alignLeft="@+id/to_txt_id"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:id="@+id/StartFromTime"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:lines="1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/StartFromTime"
+        android:layout_toEndOf="@+id/StartFromTime"
+        android:layout_alignBottom="@+id/StartFromTime"
+        android:textSize="16sp"
+        android:text="-"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/comma6"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comma6"
+        android:layout_toEndOf="@+id/comma6"
+        android:layout_alignBottom="@+id/StartFromTime"
+        android:textSize="16sp"
+        android:text="00:24 PM"
+        android:id="@+id/EndToTime_"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:lines="1"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartFromTime"
+        android:layout_alignStart="@+id/StartFromTime"
+        android:layout_alignLeft="@+id/StartFromTime"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:id="@+id/driver_profile_dayWeek"
+        />
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RouteName"
+        android:id="@+id/driver_profile_RouteEnName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/testborder1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        />
+
+
+
+</RelativeLayout>

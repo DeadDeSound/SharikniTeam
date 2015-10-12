@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navi_drawer_width">280dp</dimen>
+
+   
+    <dimen name="drawer_margin_top">24dp</dimen>
+    <dimen name="app_par_paddingTop">0dp</dimen>
+
+
+    <!--     the following code for the cordinator   -->
+
+
+
+    <dimen name="fab_margin_right">0.1dp</dimen>
+    <dimen name="fab_margin_bottom">0.1dp</dimen>
+
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+
+    <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
+
+    <dimen name="nav_header_text_margin_left">16dp</dimen>
+
+
+
+    <dimen name="codelab_fab_margin_right">16dp</dimen>
+    <dimen name="codelab_fab_margin_bottom">16dp</dimen>
+
+    <dimen name="homepagebeforelogin_items_height">40dp</dimen>
+    <dimen name="statusBarElevation">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

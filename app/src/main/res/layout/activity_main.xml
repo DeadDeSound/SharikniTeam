@@ -1,0 +1,101 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nezar.materialtest.Sharekni"
+
+        >
+
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar"
+            android:text="Top Rides"
+            android:textSize="24sp"
+            android:id="@+id/TopRideBtn"
+            android:layout_margin="10dp"
+
+
+            />
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TopRideBtn"
+            android:text="Top Drivers"
+            android:textSize="24sp"
+            android:id="@+id/TopDriversBtn"
+            android:layout_margin="10dp"
+
+
+
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TopDriversBtn"
+            android:text="Map Look Up"
+            android:textSize="24sp"
+            android:id="@+id/MapLOOkUP"
+            android:layout_margin="10dp"
+
+
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MapLOOkUP"
+            android:textSize="24sp"
+            android:id="@+id/LogInForm"
+            android:layout_margin="10dp"
+            android:text="Log In"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Page"
+            android:layout_below="@+id/LogInForm"
+            android:layout_margin="10dp"
+            android:textSize="24sp"
+            android:id="@+id/homepagetest"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawwer"
+        android:name="com.example.nezarsaleh.shareknitest.MainNavigationDrawerFragment.NavigationDrawerFragment"
+        android:layout_width="@dimen/navi_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

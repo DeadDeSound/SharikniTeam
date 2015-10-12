@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Starting Time"
+        android:id="@+id/Starting_Time_txt"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/SDG_Route_Start_FromTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Starting_Time_txt"
+        android:layout_toEndOf="@+id/Starting_Time_txt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="06:30 Am"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/search_results_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SDG_Route_Start_FromTime"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp" />
+
+
+    <com.example.nezarsaleh.shareknitest.Arafa.Classes.CircularNetworkImageView
+        android:id="@+id/search_list_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/search_results_days"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/defaultdriver"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/DriverEnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_results_days"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/search_list_photo"
+        android:layout_toRightOf="@+id/search_list_photo"
+        android:text="Khaled Farouq"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/Nationality_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DriverEnName"
+        android:layout_alignStart="@+id/DriverEnName"
+        android:layout_below="@+id/DriverEnName"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/search_list_photo"
+        android:layout_toRightOf="@+id/search_list_photo"
+        android:text="Syria"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/Best_Drivers_Item_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Nationality_en"
+        android:layout_alignStart="@+id/Nationality_en"
+        android:layout_below="@+id/Nationality_en"
+        android:padding="2dp"
+        android:text="4.3"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/rate_pic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/Best_Drivers_Item_rate"
+        android:layout_toEndOf="@+id/Best_Drivers_Item_rate"
+        android:layout_toRightOf="@+id/Best_Drivers_Item_rate"
+        android:src="@drawable/rate" />
+
+
+    <ImageView
+        android:id="@+id/driver_add_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/im5"
+        android:layout_alignStart="@+id/im5"
+        android:layout_alignLeft="@+id/im5"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/im1"
+        android:layout_alignLeft="@+id/im1"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chat" />
+
+
+    <ImageView
+
+        android:id="@+id/im1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:src="@drawable/msg"
+        android:layout_alignBottom="@+id/DriverEnName"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/im5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/im1"
+        android:layout_toStartOf="@+id/im1"
+        android:layout_alignBottom="@+id/im1"
+        android:src="@drawable/call"
+
+
+        />
+
+
+
+
+
+
+</RelativeLayout>
+

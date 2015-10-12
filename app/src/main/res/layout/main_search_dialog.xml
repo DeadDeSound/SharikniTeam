@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_dailog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primaryColor"
+
+        >
+
+        <TextView
+            android:id="@+id/Lang_Dialog_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Address"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Emirates_Reltive_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Relative_dailog"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borders_quicksearch"
+        android:padding="3dp"
+
+        >
+
+
+        <Spinner
+            android:id="@+id/Emirates_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/selectarrow_im"
+            android:layout_toStartOf="@+id/selectarrow_im"
+            android:background="@drawable/spinner_border" />
+
+        <ImageView
+            android:id="@+id/selectarrow_im"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+
+
+            android:src="@drawable/selectarrow"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative_regions_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Emirates_Reltive_1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borders_quicksearch"
+        android:padding="3dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/mainDialog_Regions_auto"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/sweep_icon"
+            android:layout_toStartOf="@+id/sweep_icon"
+            android:background="@drawable/autocomplete_regions_border"
+            android:cursorVisible="false"
+            android:hint="Enter Region"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            android:textSize="15sp"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/sweep_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:src="@drawable/sweep"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit_puckup"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Relative_regions_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_register_border_button"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

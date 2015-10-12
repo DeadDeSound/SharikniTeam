@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/gray_before_login"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        />
+
+
+
+
+</RelativeLayout>
+
+

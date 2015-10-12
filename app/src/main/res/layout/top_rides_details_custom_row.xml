@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear2"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="From :"
+        android:textColor="#1b4b85"
+        android:textSize="18sp"
+        android:id="@+id/from_txt_id"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/em_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/city_from_txt"
+        android:textColor="#1b4b85"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/from_txt_id"
+        android:layout_toEndOf="@id/from_txt_id"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/reg_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Distreict_name_txt"
+        android:textColor="#1b4b85"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/em_from"
+        android:layout_toEndOf="@+id/em_from"
+        android:layout_alignStart="@+id/reg_to"
+        android:layout_alignLeft="@+id/reg_to"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="To :"
+        android:textColor="@color/primaryColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/to_txt_id"
+        android:layout_below="@+id/from_txt_id"
+        />
+
+
+    <TextView
+        android:id="@+id/em_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/em_from"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/em_from"
+        android:layout_alignLeft="@+id/em_from"
+        android:text="@string/city_to_txt"
+        android:textColor="@color/primaryColor"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/from_txt_id"
+        android:layout_toEndOf="@id/from_txt_id"
+        />
+
+
+    <TextView
+        android:id="@+id/reg_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/district_name_2"
+        android:textColor="@color/primaryColor"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/em_to"
+        android:layout_toEndOf="@id/em_to"
+        android:layout_below="@+id/reg_from"
+
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver name :"
+        android:textSize="18sp"
+        android:layout_below="@+id/to_txt_id"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txt_driver_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_driver_name"
+        android:layout_toEndOf="@+id/txt_driver_name"
+        android:layout_alignTop="@+id/txt_driver_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:text="Nezar"
+        android:id="@+id/best_DriverName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_driver_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="Route name :"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txt_route_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Test"
+        android:layout_toRightOf="@+id/txt_route_name"
+        android:layout_toEndOf="@+id/txt_route_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/txt_route_name"
+        android:textStyle="italic"
+        android:id="@+id/best_RouteEnName"
+        />
+
+
+
+</RelativeLayout>

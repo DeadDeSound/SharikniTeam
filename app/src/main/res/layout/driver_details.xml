@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                >
+
+
+                <com.example.nezarsaleh.shareknitest.Arafa.Classes.CircularNetworkImageView
+                    android:id="@+id/profilephoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/testprofile"
+                    app:border="true"
+                    app:border_color="#EEEEEE"
+                    app:border_width="4dp"
+                    app:shadow="true"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mohamed Arafa"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/profilephoto"
+                    android:layout_toEndOf="@+id/profilephoto"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/TopName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Egypt"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/TopName"
+                    android:layout_alignStart="@+id/TopName"
+                    android:layout_alignLeft="@+id/TopName"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/NationalityEnName"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Best_Drivers_Item_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/NationalityEnName"
+                    android:layout_toEndOf="@+id/NationalityEnName"
+                    android:layout_toRightOf="@+id/NationalityEnName"
+                    android:padding="5dp"
+                    android:text="4.3"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@+id/Best_Drivers_Item_rate"
+                    android:layout_toEndOf="@+id/Best_Drivers_Item_rate"
+                    android:layout_toRightOf="@+id/Best_Drivers_Item_rate"
+                    android:src="@drawable/rate"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/msg"
+                    android:layout_alignBottom="@+id/TopName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/profile_msg"
+                    android:layout_toLeftOf="@+id/profile_call"
+                    android:layout_toStartOf="@+id/profile_call"
+                    />
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/call"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@+id/profile_msg"
+                    android:id="@+id/profile_call"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:id="@+id/view_underline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#a3a3a3"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_rides"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    >
+
+                </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+

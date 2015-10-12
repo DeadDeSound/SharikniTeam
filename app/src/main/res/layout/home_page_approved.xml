@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/homepageback">
+
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/profilepic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/defaultdriver"
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="4dp"
+                app:shadow="true" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+
+                android:src="@drawable/newedit" />
+
+            <ImageView
+                android:id="@+id/Home_rate_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/imageView5"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imageView5"
+                android:layout_toStartOf="@+id/imageView5"
+
+                android:src="@drawable/rate" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Home_rate_icon"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/Home_rate_icon"
+                android:layout_toStartOf="@+id/Home_rate_icon"
+                android:text="4.3"
+                android:textColor="@color/gray_before_login"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/Home_Relative_Notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/notifications" />
+
+                <TextView
+                    android:id="@+id/DriverMyAlertsCount"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_name_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilepic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Mohamed Ali Arafa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/nat_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="United Arab Emirates"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/lang_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nat_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/driver_rides_Created"
+                    android:layout_width="105dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/homeridecreated" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_centerHorizontal="true"
+
+                        >
+
+                        <TextView
+
+                            android:id="@+id/RidesCreated_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ride Created"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/DriverMyRidesCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/RidesCreated_txt"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_toEndOf="@+id/RidesCreated_txt"
+                            android:layout_toRightOf="@+id/RidesCreated_txt"
+                            android:text="1"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="105dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/homeridejoined">
+
+
+                    <ImageView
+                        android:id="@+id/RideJoined_im"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/homeridejoined" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/Rides_joined_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ride Joined"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/PassengerJoinedRidesCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/Rides_joined_txt"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_toEndOf="@+id/Rides_joined_txt"
+                            android:layout_toRightOf="@+id/Rides_joined_txt"
+                            android:text="1"
+                            android:textSize="13sp"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="105dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:id="@+id/Home_Realtive_Vehicles"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/Vehicles_im"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/homevehicles" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/Vehicles_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicles"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/VehiclesCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/Vehicles_txt"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_toEndOf="@+id/Vehicles_txt"
+                            android:layout_toRightOf="@+id/Vehicles_txt"
+                            android:text="1"
+                            android:textColor="@color/gray_before_login"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/primaryColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/Relative_quickSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/primaryColor"
+                    android:scaleType="centerCrop"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/im12"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/homefindridepic" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/im12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Find Rides"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFFFFF" />
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@color/primaryColor">
+
+
+                    <ImageView
+                        android:id="@+id/im11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/homehistory" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/im11"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="History"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/btn_createCarPool"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@color/primaryColor"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/im10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/homecreateridebtn" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/im10"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Create Ride"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFFFFF" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@color/primaryColor"
+                    android:id="@+id/Home_Relative_Permit"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/im13"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/homepermit" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/im13"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Permit"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawwer"
+        android:name="com.example.nezarsaleh.shareknitest.MainNavigationDrawerFragment.NavigationDrawerFragment"
+        android:layout_width="@dimen/navi_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

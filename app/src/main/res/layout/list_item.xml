@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.nezar.materialtest.Arafa.Classes.CircularNetworkImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:padding="3dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:padding="5dp"
+        android:text="Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:padding="5dp"
+        android:text="Nationality" />
+
+    <RatingBar
+        android:id="@+id/Rating"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvName"
+        android:isIndicator="true" />
+
+
+
+</RelativeLayout>

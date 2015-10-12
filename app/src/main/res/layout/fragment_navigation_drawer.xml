@@ -1,0 +1,318 @@
+
+
+    <RelativeLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DADADA"
+        tools:context="com.example.nezar.materialtest.MainNavigationDrawerFragment.NavigationDrawerFragment">
+
+        <LinearLayout
+            android:id="@+id/container_drawer_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/primaryColor">
+
+
+            <com.pkmmte.view.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/defaultdriver"
+                android:id="@+id/navy"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                android:layout_marginStart="90dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/drawer_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/container_drawer_image">-->
+
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/container_drawer_image"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_homePage"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Home Page"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon1"
+                    android:layout_toEndOf="@+id/menuicon1"
+                    android:textStyle="bold"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFFFFF"
+
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#969696"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_TopRides"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Most Rides"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon2"
+                    android:layout_toEndOf="@+id/menuicon2"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#969696"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_BestDrivers"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Best Drivers"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon3"
+                    android:layout_toEndOf="@+id/menuicon3"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#969696"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_SearchOptions"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon4"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Search Options"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon4"
+                    android:layout_toEndOf="@+id/menuicon4"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#969696"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_MyProfile"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon5"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Notifications"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon5"
+                    android:layout_toEndOf="@+id/menuicon5"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#969696"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/navy_Logout"
+                >
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menuicon"
+                    android:id="@+id/menuicon6"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Logout"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/menuicon6"
+                    android:layout_toEndOf="@+id/menuicon6"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>

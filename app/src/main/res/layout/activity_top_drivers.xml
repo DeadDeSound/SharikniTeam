@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+
+    <RelativeLayout
+        android:id="@+id/actionbar_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:padding="2dp"
+        android:background="#F44336"
+
+        >
+
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Top Drivers"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            />
+
+        <!--<ImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:src="@drawable/ic_menu_white_24dp"-->
+
+            <!--/>-->
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar_recyclerview"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

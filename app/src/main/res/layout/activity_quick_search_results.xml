@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nezar.materialtest.QuickSearchResults"
+
+    >
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+        <TextView
+
+            android:id="@+id/from_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="From "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/quick_search_em_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/from_txt_id"
+            android:layout_toRightOf="@+id/from_txt_id"
+            android:text="@string/city_from_txt"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_toRightOf="@+id/quick_search_em_from"
+            android:layout_toEndOf="@+id/quick_search_em_from"
+            android:layout_alignBottom="@+id/quick_search_em_from"
+            android:id="@+id/comma4"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/quick_search_reg_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/comma4"
+            android:layout_toRightOf="@+id/comma4"
+            android:layout_alignBottom="@+id/quick_search_em_from"
+            android:text="@string/Distreict_name_txt"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+
+        <TextView
+            android:id="@+id/to_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/from_txt_id"
+            android:layout_alignStart="@+id/from_txt_id"
+            android:layout_below="@+id/quick_search_reg_from"
+            android:layout_marginTop="10dp"
+            android:text="To "
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/quick_search_em_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/to_txt_id"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/to_txt_id"
+            android:layout_toRightOf="@id/to_txt_id"
+            android:text="@string/city_to_txt"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_toRightOf="@+id/quick_search_em_to"
+            android:layout_toEndOf="@+id/quick_search_em_to"
+            android:layout_alignBottom="@+id/quick_search_em_to"
+            android:id="@+id/comma5"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+
+            />
+        <TextView
+            android:id="@+id/quick_search_reg_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/comma5"
+            android:layout_toEndOf="@+id/comma5"
+            android:layout_alignBottom="@+id/quick_search_em_to"
+            android:text="@string/district_name_2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cfcfcf"
+            android:layout_below="@+id/to_txt_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_searchResult"
+            android:layout_below="@+id/to_txt_id"
+            android:layout_marginTop="20dp"
+            >
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

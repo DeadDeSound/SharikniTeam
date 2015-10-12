@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackgroundtest">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_register_border"
+            android:orientation="horizontal"
+
+            >
+
+
+            <EditText
+                android:id="@+id/edit_reg_fname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/borders_edit_txt_user_register"
+                android:cursorVisible="false"
+                android:hint="        First Name"
+                android:lines="1"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="@color/primaryColor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_register_border">
+
+
+            <EditText
+                android:id="@+id/edit_reg_lname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/borders_edit_txt_user_register"
+                android:cursorVisible="false"
+                android:hint="        Last Name"
+                android:lines="1"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="@color/primaryColor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_register_border"
+
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompletecountry_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/borders_edit_txt_user_register"
+                android:cursorVisible="false"
+                android:hint="        NATIONALITY"
+                android:lines="1"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="@color/primaryColor"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_register_border">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_lang_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/borders_edit_txt_user_register"
+                android:cursorVisible="false"
+                android:hint="        PREFERRED LANGUAGE"
+                android:lines="1"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="@color/primaryColor" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Date Of Birth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/date_of_birth_txt"
+                />
+            <DatePicker
+                android:layout_below="@+id/date_of_birth_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:layout_marginTop="35dp"
+                android:spinnersShown="true"
+                android:endYear="2015"
+                android:calendarViewShown="false"
+                android:background="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                >
+
+            </DatePicker>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/user_register_border">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/malefemale"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/malefemale"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/femalemale"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:id="@+id/femalemale"
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_register_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView25"
+                android:layout_centerHorizontal="true"
+                android:background="@color/primaryColor"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

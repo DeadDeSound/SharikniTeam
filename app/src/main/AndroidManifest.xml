@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nezarsaleh.shareknitest" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".Arafa.Classes.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base" >
+        <activity
+            android:name=".Sharekni"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_sub_navigate"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".TopDriversDir.TopDrivers"
+            android:label="@string/title_activity_top_drivers"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".OnBoardDir.OnboardingActivity"
+            android:label="@string/title_activity_On_Boarding"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".ViewProfileActivity"
+            android:label="@string/title_activity_view_profile" />
+        <activity
+            android:name=".Arafa.Activities.MainActivity"
+            android:label="@string/title_activity_home_page_test"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".Arafa.Activities.BestDriversBeforeLogin"
+            android:label="@string/title_activity_home_page_test"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".Arafa.Activities.BestRideBeforeLogin"
+            android:label="@string/title_activity_home_page_test"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".Arafa.Activities.Profile"
+            android:label="@string/title_activity_home_page_test"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".Arafa.Activities.Route"
+            android:label="@string/title_activity_home_page_test"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".LoginApproved"
+            android:label="@string/title_activity_login_approved"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".SearchOptions"
+            android:label="@string/title_activity_search_options"
+            android:parentActivityName=".Sharekni"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Sharekni" />
+        </activity>
+        <activity
+            android:name=".RouteTesetActiv"
+            android:label="@string/title_activity_route_teset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RegisterNewTest"
+            android:label="@string/title_activity_register_new_test"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".DriverProfileTest"
+            android:label="@string/title_activity_my_profile_tet"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TopRidesAfterLogin"
+            android:label="@string/title_activity_top_rides_after_login"
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".TopDriversAfterLogin"
+            android:label="@string/title_activity_top_drivers_after_login"
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".MostRidesDetails"
+            android:label="@string/title_activity_most_rides_details"
+            android:parentActivityName=".TopRidesAfterLogin"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.TopRidesAfterLogin" />
+        </activity>
+        <activity
+            android:name=".ForgetPassword"
+            android:label="@string/title_activity_forget_password"
+            android:parentActivityName=".LoginApproved"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.LoginApproved" />
+        </activity>
+        <activity
+            android:name=".ChangePasswordTest"
+            android:label="@string/title_activity_change_password_test"
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".MyProfileTest"
+            android:label="@string/title_activity_my_profile_test"
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".EditProfileTest"
+            android:label="@string/title_activity_edit_profile_test"
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".QuickSearchResults"
+            android:label="@string/title_activity_quick_search_results" >
+        </activity>
+        <activity
+            android:name=".DriverCreateCarPool"
+            android:label="@string/title_activity_driver_create_car_pool" >
+        </activity>
+        <activity
+            android:name=".QSearch"
+            android:label="@string/title_activity_qsearch" >
+        </activity>
+        <activity
+            android:name=".Advanced_Search"
+            android:label="@string/title_activity_advanced__search"
+            android:parentActivityName=".SearchOptions"
+            android:theme="@style/AppTheme.Base" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.SearchOptions" />
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.SearchOptions" />
+        </activity>
+        <activity
+            android:name=".DriverAlertsForRequest"
+            android:label="@string/title_activity_driver_alerts_for_request"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.Base" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".RideDetailsPassenger"
+            android:label="@string/title_activity_ride_details_passenger"
+            android:theme="@style/AppTheme.Base" >
+        </activity>
+        <activity
+            android:name=".DriverRequestDetails"
+            android:label="@string/title_activity_driver_request_details"
+            android:parentActivityName=".DriverAlertsForRequest"
+            android:theme="@style/AppTheme.Base" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.DriverAlertsForRequest" />
+        </activity>
+        <activity
+            android:name=".DriverCreatedRides"
+            android:label="@string/title_activity_driver_created_rides"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.Base" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".DriverJoinedRides"
+            android:label="@string/title_activity_driver_joined_rides"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.Base" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nezarsaleh.shareknitest.HomePage" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.Base" >
+        </activity>
+        <activity
+            android:name=".TestVedio"
+            android:label="@string/title_activity_test_vedio"
+            android:theme="@style/AppTheme.Base" >
+        </activity>
+    </application>
+
+</manifest>

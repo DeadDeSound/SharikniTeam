@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borders"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    >
+
+
+    <TextView
+        android:id="@+id/Text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="There is no Result matches your search criteria "
+        android:textColor="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/noroute_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/borders_quicksearch_btn"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

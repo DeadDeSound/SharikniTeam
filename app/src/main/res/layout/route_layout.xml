@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+    <ImageView
+        android:id="@+id/routeImage"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+    <TextView
+        android:id="@+id/routeNameEn"
+        android:text="Route English"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/app_bar"
+        android:layout_toRightOf="@+id/routeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/routeNameAr"
+        android:text="Route Arabic"
+        android:textSize="15sp"
+        android:layout_below="@+id/routeNameEn"
+        android:layout_toRightOf="@+id/routeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/routeBasis"
+        android:layout_below="@+id/routeNameAr"
+        android:text="Daily"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/routeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/FromToLayout"
+        android:layout_below="@+id/routeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/routeFromEmirateEn"
+            android:layout_below="@+id/routeImage"
+            android:singleLine="true"
+            android:text="From"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/routeToEmirateEn"
+            android:layout_below="@+id/routeImage"
+            android:singleLine="true"
+            android:text="To"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/routeFromAr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RegionFromToLayout"
+        android:layout_below="@+id/FromToLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/routeFromRegionEn"
+            android:layout_below="@+id/routeImage"
+            android:singleLine="true"
+            android:text="From"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/routeToRegionEn"
+            android:layout_below="@+id/routeImage"
+            android:singleLine="true"
+            android:text="To"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/routeFromAr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

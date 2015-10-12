@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/frbackgroundtwo"
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/shareknilogo"
+            android:id="@+id/imageView"
+            android:layout_marginTop="71dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="65dp"
+            android:src="@drawable/onboardbestdrivers"
+            android:layout_marginBottom="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/im_best_drivers"
+
+            />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="65dp"
+            android:src="@drawable/onboardbestrides"
+            android:layout_above="@+id/im_best_drivers"
+            android:layout_alignLeft="@+id/im_best_drivers"
+            android:layout_alignStart="@+id/im_best_drivers"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/im_best_rides"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
