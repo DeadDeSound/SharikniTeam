@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcel;
@@ -127,73 +128,7 @@ public class Route extends AppCompatActivity implements OnMapReadyCallback {
         Log.d("test Passenger id", String.valueOf(Passenger_ID));
         Log.d("test Route id", String.valueOf(Route_ID));
 
-        GetData GD = new GetData();
-        try {
-            days = "";
-            JSONObject json = GD.GetRouteById(Route_ID);
-            FromRegionEnName.setText(json.getString("FromRegionEnName"));
-            ToRegionEnName.setText(json.getString("ToRegionEnName"));
-
-            FromEmirateEnName.setText(json.getString("FromEmirateEnName"));
-            ToEmirateEnName.setText(json.getString("ToEmirateEnName"));
-
-            str_StartFromTime = json.getString("StartFromTime");
-            str_EndToTime_ = json.getString("EndToTime_");
-
-            str_StartFromTime = str_StartFromTime.substring(Math.max(0, str_StartFromTime.length() - 7));
-            Log.d("string", str_StartFromTime);
-
-            str_EndToTime_ = str_EndToTime_.substring(Math.max(0, str_EndToTime_.length() - 7));
-            Log.d("time to", str_EndToTime_);
-
-            StartFromTime.setText(str_StartFromTime);
-            EndToTime_.setText(str_EndToTime_);
-
-
-            NationalityEnName.setText(json.getString("NationalityEnName"));
-            PrefLanguageEnName.setText(json.getString("PrefLanguageEnName"));
-
-            AgeRange.setText(json.getString("AgeRange"));
-            PreferredGender.setText(json.getString("PreferredGender"));
-            IsSmoking.setText(json.getString("IsSmoking"));
-
-
-            StartLat = json.getDouble("StartLat");
-            StartLng = json.getDouble("StartLng");
-            EndLat = json.getDouble("EndLat");
-            EndLng = json.getDouble("EndLng");
-            Log.d("S Lat", String.valueOf(StartLat));
-
-            if (json.getString("Saturday").equals("true")) {
-                days += "Sat , ";
-            }
-            if (json.getString("Sunday").equals("true")) {
-                days += "Sun , ";
-
-            }
-            if (json.getString("Monday").equals("true")) {
-                days += "Mon , ";
-
-            }
-            if (json.getString("Tuesday").equals("true")) {
-                days += "Tue , ";
-            }
-            if (json.getString("Wednesday").equals("true")) {
-                days += "Wed , ";
-            }
-            if (json.getString("Thursday").equals("true")) {
-                days += "Thu , ";
-
-            }
-            if (json.getString("Friday").equals("true")) {
-                days += "Fri ";
-            }
-            ride_details_day_of_week.setText(days);
-            days = "";
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+        new loadingBasicInfo().execute();
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map_ride_details);
         mapFragment.getMapAsync(this);
@@ -229,6 +164,106 @@ public class Route extends AppCompatActivity implements OnMapReadyCallback {
 
 
     }  // on create
+
+    private class loadingBasicInfo extends AsyncTask{
+        JSONObject json;
+
+        @Override
+        protected void onPostExecute(Object o) {
+            try {
+                FromRegionEnName.setText(json.getString("FromRegionEnName"));
+                ToRegionEnName.setText(json.getString("ToRegionEnName"));
+                FromEmirateEnName.setText(json.getString("FromEmirateEnName"));
+                ToEmirateEnName.setText(json.getString("ToEmirateEnName"));
+                str_StartFromTime = json.getString("StartFromTime");
+                str_EndToTime_ = json.getString("EndToTime_");
+                str_StartFromTime = str_StartFromTime.substring(Math.max(0, str_StartFromTime.length() - 7));
+                Log.d("string", str_StartFromTime);
+                str_EndToTime_ = str_EndToTime_.substring(Math.max(0, str_EndToTime_.length() - 7));
+                Log.d("time to", str_EndToTime_);
+                StartFromTime.setText(str_StartFromTime);
+                EndToTime_.setText(str_EndToTime_);
+                NationalityEnName.setText(json.getString("NationalityEnName"));
+                PrefLanguageEnName.setText(json.getString("PrefLanguageEnName"));
+                AgeRange.setText(json.getString("AgeRange"));
+                PreferredGender.setText(json.getString("PreferredGender"));
+                IsSmoking.setText(json.getString("IsSmoking"));
+                StartLat = json.getDouble("StartLat");
+                StartLng = json.getDouble("StartLng");
+                EndLat = json.getDouble("EndLat");
+                EndLng = json.getDouble("EndLng");
+                Log.d("S Lat", String.valueOf(StartLat));
+                if (json.getString("Saturday").equals("true")) {
+                    days += "Sat , ";
+                }
+                if (json.getString("Sunday").equals("true")) {
+                    days += "Sun , ";
+                }
+                if (json.getString("Monday").equals("true")) {
+                    days += "Mon , ";
+                }
+                if (json.getString("Tuesday").equals("true")) {
+                    days += "Tue , ";
+                }
+                if (json.getString("Wednesday").equals("true")) {
+                    days += "Wed , ";
+                }
+                if (json.getString("Thursday").equals("true")) {
+                    days += "Thu , ";
+                }
+                if (json.getString("Friday").equals("true")) {
+                    days += "Fri ";
+                }
+                ride_details_day_of_week.setText(days);
+                days = "";
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        protected Object doInBackground(Object[] params) {
+            GetData GD = new GetData();
+            try {
+                days = "";
+                json = GD.GetRouteById(Route_ID);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+    }
+
+    private class loadingReviews extends AsyncTask{
+        JSONArray response1 = null;
+
+        @Override
+        protected void onPostExecute(Object o) {
+            for (int i = 0; i < response1.length(); i++) {
+                try {
+                    JSONObject obj = response1.getJSONObject(i);
+                    final DriverGetReviewDataModel review = new DriverGetReviewDataModel(Parcel.obtain());
+                    review.setAccountName(obj.getString("AccountName"));
+                    review.setAccountNationalityEn(obj.getString("AccountNationalityEn"));
+                    review.setReview(obj.getString("Review"));
+                    driverGetReviewDataModels_arr.add(review);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        @Override
+        protected Object doInBackground(Object[] params) {
+            try {
+                response1 = new GetData().Driver_GetReview(Driver_ID, Route_ID);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
