@@ -91,7 +91,6 @@ public class Profile extends AppCompatActivity {
         GetData j = new GetData();
         Bundle in = getIntent().getExtras();
         Driver_ID = in.getInt("DriverID");
-//        new rideJson().execute();
         ProgressDialog pDialog = new ProgressDialog(this);
         pDialog.setMessage("Loading" + "...");
         pDialog.show();

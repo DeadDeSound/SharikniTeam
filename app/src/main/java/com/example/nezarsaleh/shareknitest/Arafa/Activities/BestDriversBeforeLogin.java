@@ -99,25 +99,23 @@ public class BestDriversBeforeLogin extends AppCompatActivity {
         protected Object doInBackground(Object[] params) {
             JSONArray response = null;
             try {
-                response = new GetData().GetAllDrivers();
+                response = new GetData().GetBestDrivers();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             for (int i = 0; i < response.length(); i++) {
                 try {
                     JSONObject obj = response.getJSONObject(i);
-//                    JSONObject j = new JSONObject(obj.getString("FirstName"));
                     final BestDriverDataModel driver = new BestDriverDataModel(Parcel.obtain());
-                    driver.setID(obj.getInt("ID"));
-                    driver.setName(obj.getString("FirstName"));
-                    driver.setPhotoURL(obj.getString("PhotoPath"));
+                    driver.setID(obj.getInt("AccountId"));
+                    driver.setName(obj.getString("AccountName"));
+                    driver.setPhotoURL(obj.getString("AccountPhoto"));
                     driver.setNationality(obj.getString("NationalityEnName"));
-                    //driver.setRating(obj.getInt("Rating"));
+                    driver.setRating(obj.getInt("Rating"));
                     arr.add(driver);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                //hidePDialog();
             }
             return null;
         }

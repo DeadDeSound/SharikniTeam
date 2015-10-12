@@ -199,6 +199,13 @@ public class GetData {
         return new JSONArray(obj.getData());
     }
 
+    public JSONArray GetBestDrivers() throws JSONException {
+        HandleXML obj = new HandleXML(getBestDriverUrl);
+        obj.fetchXML();
+        while (obj.parsingComplete) ;
+        return new JSONArray(obj.getData());
+    }
+
     public JSONArray GetDriverRides(int ID) throws JSONException {
         HandleXML obj = new HandleXML(getDriverRideUrl + ID);
         obj.fetchXML();

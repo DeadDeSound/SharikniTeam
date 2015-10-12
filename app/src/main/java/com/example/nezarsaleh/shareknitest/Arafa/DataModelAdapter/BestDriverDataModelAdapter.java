@@ -68,6 +68,7 @@ import java.util.List;
             CircularNetworkImageView Photo = (CircularNetworkImageView) convertView.findViewById(R.id.ivProfile);
         TextView Name = (TextView) convertView.findViewById(R.id.tvName);
         TextView Nat = (TextView) convertView.findViewById(R.id.tvNat);
+        TextView Rat = (TextView) convertView.findViewById(R.id.Best_Drivers_Item_rate);
 
         //RatingBar rating = (RatingBar) convertView.findViewById(R.id.ratingBar);
 
@@ -77,6 +78,7 @@ import java.util.List;
         Photo.setImageUrl(URL + m.getPhotoURL(), imageLoader);
         Name.setText(m.getName());
         Nat.setText(m.getNationality());
+        Rat.setText(Integer.toString(m.getRating()));
 
         Best_Drivers_Item_Details.setOnClickListener(new View.OnClickListener() {
             @Override
